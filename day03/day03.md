@@ -15,7 +15,7 @@ Hours: Slowest pulse (* 0.1), giving the ring visual permanence and stability.
 
 Visual Indicator: Since traditional hands were forbidden, I implemented the current time as a small, thicker arc that rotates with its respective ring system. The entire ring rotates, so the indicator arc stays visually anchored at the top, pointing to the end of its current cycle.
 
-![Abstract Cyclical Clock Sketch showing nested rings]("C:\GENCG\lesson3.png")
+![Abstract Cyclical Clock Sketch showing nested rings](C:\GENCG\lesson3.png)
 
 
 ### Technical Challenge Encountered: 
