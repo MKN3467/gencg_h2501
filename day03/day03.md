@@ -1,4 +1,4 @@
-# Week 1: Abstract Time Visualization - Cyclical Rings
+# day03: Abstract Time Visualization - Cyclical Rings
 
 The project this week was to design an abstract, cyclical visualization of the passing of time, avoiding letters and digits. My approach uses nested, pulsating rings to represent seconds, minutes, and hours, embodying the concept of cyclical time.
 
