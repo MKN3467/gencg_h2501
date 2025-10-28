@@ -1,56 +1,76 @@
 # Day 01
 
-## Computing without computer
+## Exploration & Experimentation
 
-### Sollewit: Wall drawing
+This week's focus was on the foundational concepts of generative art, contrasting the precision of computers with human subjectivity, and engaging in analog, system-based exercises.
 
-We looked at a cool art piece that showed how complexity can come from simple rules. It was created by just taking fifty random spots and connecting every single one of them to all the others with a straight line, which created a very dense, tangled network.
+I started by setting up my coding environment, cloning the repository, and familiarizing myself with the P5.js environment. The core of my initial exploration was the analog exercises from the lecture, which served as a warm-up for algorithmic thinking without a computer.
 
-Conway & Patterson: Sprouts 🌱
-We learned the rules for a strategy drawing game called Sprouts.
+Moniker: The Beach (Self-Organization): This involved simulating the "empty place, position yourself right in the middle" rule. My hand-drawn result quickly led to a highly dense, uniform distribution, illustrating how a simple, local rule (avoiding immediate neighbors) leads to a complex, global, self-organized pattern. The physical process helped me consider what an iteration loop would look like in code: For every person/point, check distance to all others, find largest free space, move to center of that space.
 
-How to Play: Players take turns drawing a line between two existing spots (or looping back to the same spot) and adding a new spot on that line.
+Wall Drawing 118 (Complexity from Simplicity): Connecting 50 random points with straight lines. The output was a web of overwhelming complexity, proving how a simple global rule (connect all points) can generate maximum visual density and chaos. This will be a great test case for the line() and random() functions in p5.js later on.
 
-Key Rules: Lines can't cross, and no spot can have more than three lines connected to it.
+Draw then Code: I completed the initial Trees exercise to practice using ellipse(), triangle(), and line(). This was essential for understanding how to translate a concept (a tree) into geometric primitives.
 
-The Goal: The last person who can successfully draw a line wins, making it a game about running out of moves and connections.
+### Technical Challanges
 
-![Example Image](content/day01/test.jpg)
+Initial setup of the P5.js local server environment, ensuring the sketch.js file and the embed.html worked correctly. This was a minor setup issue, quickly resolved.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+## Influences & References
+
+The core reference this week is Vera Molnár. Her practice of documenting algorithmic thinking in notebooks before having computer access is the direct inspiration for this journal.   
+
+
+Artist: Vera Molnár    
+
+
+Concept: "Machine Imaginaire" (Imaginary Machine).   
+
+
+Connection: This concept stresses the importance of defining the algorithmic rule and constraints before execution. This directly connects to the foundational lesson that art is a matter of logic, and intuition must be aided by cognition. My analog exercises were essentially running my "imaginary machine" by hand.   
+
+Concept: Formal Modification
+
+Reference: J.J. Winckelmann quote in the introduction: "The paint-brush that the artist handles, should be dripped into knowledge".
+
+Connection: The text states that by using simple geometric patterns, one can proceed via stepwise transformations altering parameters like dimension, proportion, and number of elements. This will be the basis of my iterative development in the coming weeks.
+
+## Algorithmic Thinking
+The main system I started developing this week is the concept of a Constraint-Based Generator as explored in the "Draw then Code" exercise.   
+
+### System: Basic Tree Generator (Tree 6)
 
 ```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+// Define fixed parameters (The trunk and base shape)
+SET size = 100
+SET position_x = canvas.center_x
+SET position_y = canvas.center_y
+
+// Draw the main geometric form (The Conifer shape)
+DRAW TRIANGLE (position_x, position_y + size/2) to (position_x - size/2, position_y - size/2) to (position_x + size/2, position_y - size/2)
+// Draw the central line (The trunk/main division)
+DRAW LINE from (position_x, position_y - size/2) to (position_x, position_y + size/2)
+
+// Logic for the leaves/branches (The key generative element for the next step)
+// For now, this is manual lines. Next week, this will become a LOOP.
+
+// IF (line_count < max_lines) THEN
+//   DRAW LINE from point on central line to point on triangle edge
 ```
+Constraints (Fixed): The overall bounding box shape is a triangle. The central line is fixed. Parameters (Variables for future exploration): The number of horizontal lines/branches, the spacing between them, and their angle relative to the central line.   
 
-### Webcam tests
+## Critical Reflection
+What worked? The analog exercises were surprisingly effective at highlighting the different effects of local vs. global rules. The "Beach" exercise showed self-organization leading to order, while the "Wall Drawing 118" showed unconstrained connection leading to chaos. The contrast helps solidify the need for intentional constraints in generative work.   
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
-{% raw %}
-<iframe src="https://editor.p5js.org/mer.karan34/full/fLxp0y-CE" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
+What didn't work? My initial hand-sketches for the Sprouts game were very difficult to track, and I broke the "no lines crossing" rule several times. This highlights the lecture's point: "But human beings are very bad automatons. They are slow and horribly subjective". It confirms the necessity of using the computer for perfect execution of complex, rule-based systems.   
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
-{% raw %}
-<iframe src="content/day01/02/embed.html" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
+Next steps:    
 
-## Computing with computer
+Code the Wall Drawing 118 exercise in p5.js to translate the analog chaos into a digital output.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+Begin exploring Iteration + Randomness by coding the grid system discussed in the lectures.
 
-> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+Develop a limited color palette to apply to the grid, as the simple black-and-white feels too basic.
 
-{% raw %}
-<iframe src="content/day01/03/embed.html" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
-
-* Lorem ipsum dolor sit amet
-* Consetetur sadipscing elitr, sed diam nonumy.
-* At vero eos et accusam et justo duo dolores et ea rebum. 
