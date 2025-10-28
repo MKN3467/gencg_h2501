@@ -60,3 +60,5 @@ What didn't work? Why do you think it failed? I initially tried to link color to
 
 ![Example Image](lesson4_1.png)
 
+<iframe src="content/day01/01/embed.html" width="100%" height="450" frameborder="no"></iframe>
+
