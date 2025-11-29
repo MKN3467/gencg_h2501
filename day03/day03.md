@@ -1,70 +1,50 @@
-# day03: Abstract Time Visualization - Cyclical Rings
+# Week 03: Time & Oscillations
+**Date:** 2025-11-29
 
-The project this week was to design an abstract, cyclical visualization of the passing of time, avoiding letters and digits. My approach uses nested, pulsating rings to represent seconds, minutes, and hours, embodying the concept of cyclical time.
+## Exploration & Experimentation
+The brief was to build an "Abstract Clock" that visualizes the passing of time without using numbers or text. I explored the concept of **Cyclical Time**—the idea that time repeats in loops (minutes, hours, days)—rather than a linear timeline.
 
-## 1. Exploration & Experimentation
-The core of the experiment was to treat time not as a number but as a visual cycle expressed through rotation, color, and pulse. I used p5.js and implemented three nested rings: one for hours, one for minutes, and one for seconds.
+My goal was to create a "Neon Ring System" where the passage of time is felt through light and motion rather than read through digits.
 
-Continuous Flow: The critical success was using a normalized time parameter (a float from $0$ to $<1$) derived from the current system time. This value, instead of just the whole numbers, allows the rotation and color to transition smoothly, embodying continuous rather than discrete time, which fulfills the "abstract" requirement.
+![Concept Sketch](./images/sketch_week03.jpg) 
+*(Note: If you haven't drawn one yet, draw 3 concentric circles on paper and upload it here later)*
 
-Time as Pulse (Psychological Time): I used the sine wave function (sin(frameCount * rate)) to introduce a subtle, constant pulse to the diameter of each ring. This visually represents the subjective feeling that time moves differently based on its scale:
+## References
+* **Lesson Theme:** "Linear vs. Cyclical Time" - I chose to focus purely on cyclical representation using circles.
+* **Technique:** `drawingContext.shadowBlur` in p5.js to create a neon glow effect.
 
-Seconds: Fastest pulse (* 2.0), giving the ring a fleeting, restless quality.
+## Algorithmic Thinking
+To translate time into geometry, I used the following logic:
 
-Hours: Slowest pulse (* 0.1), giving the ring visual permanence and stability.
+* **Mapping Time to Angles:** * I grabbed the current time using `second()`, `minute()`, and `hour()`.
+    * I mapped these values (0-60) to degrees (0-360) to determine the length of the arcs.
+* **The "Glow" System:** * Standard p5.js functions (`stroke()`) create flat lines. To achieve the glowing look, I accessed the native HTML5 canvas API using `drawingContext.shadowBlur` and `drawingContext.shadowColor`.
+* **Visual Hierarchy:**
+    * **Outer Ring (Blue):** Seconds (Fastest motion, highly visible).
+    * **Middle Ring (Green):** Minutes.
+    * **Inner Ring (Pink):** Hours (Slowest).
 
-Visual Indicator: Since traditional hands were forbidden, I implemented the current time as a small, thicker arc that rotates with its respective ring system. The entire ring rotates, so the indicator arc stays visually anchored at the top, pointing to the end of its current cycle.
+## Code
+Here is the core snippet for drawing the glowing rings:
 
-![Abstract Cyclical Clock Sketch showing nested rings](C:\GENCG\lesson3.png)
-
-
-### Technical Challenge Encountered: 
-My first attempt at calculating the hour cycle was too simplistic (hour() / 12), which resulted in a jumpy, non-continuous motion. I fixed this by including the current minute and second values in the normalized calculation for the hour (see snippet below).
-
-// Snippet for accurate, continuous hour normalization:
-let h = hour() % 12; // Base 12-hour cycle
-// Normalized value (0 to <1) over 12 hours
-let h_normalized = (h * 60 * 60 + minute() * 60 + second()) / (12 * 3600); 
-
-// Diameter is modulated by a slow sine wave for the "pulse"
-let hourDiameter = ringDiameter + sin(frameCount * 0.1) * 10;
-
-## 2. Influences & References:
-
-The design is deeply influenced by the lecture's conceptual framework, particularly the contrast between time models and the artistic examples.
-
-Concept - Cyclical Time Nesting: The layered, concentric structure directly embodies the lecture's diagram showing smaller cycles nested within larger ones (seconds within minutes within hours). This provides a visual map of time's structure.
-
-Artistic Influence - Materializing Time: The idea of using a continuous, non-numerical transformation to display time was inspired by the works of Albin Karlsson's evolving sculpture and Susanna Hertrich's Chrono Shredder. These pieces show time as a material process (wax accumulation, paper destruction). My code translates this into a purely visual process (color blending and geometric pulsation).
-
-Generative Art Practice: The methodology of using constrained parameters (normalized time, fixed color palettes) to generate continuous variation is rooted in the thinking of Vera Molnár, focusing on simple algorithmic rules to produce complex, dynamic visual output.
-
-## 3. Algorithmic Thinking
-
-My system operates as a three-tiered, non-interacting modular clock. Each ring has its own independent algorithm for drawing and movement.
-
-Core System Rule: drawTimeRing(diameter, t_norm, color, segments, weight)
-
-Control Parameters:
-
-t_norm: The single normalized value that controls the entire state of that ring.
-
-weight: Line thickness, used to give visual weight to slower cycles (e.g., hours are 4px, seconds are 1px).
-
-segments: The number of discrete marks or "ticks" drawn (e.g., 60 for minutes, 12 for hours).
-
-Progression Rule (Rotation & Color):
-
-Rotation: The entire ring's local coordinate system is rotated by $t\_norm \times 360^\circ$.
-
-Color: The stroke color is determined by a continuous function: lerpColor(ColorA, ColorB, t_norm). As $t\_norm$ moves from $0$ to $1$, the ring's color shifts smoothly (e.g., from deep blue at the start of the cycle to bright cyan at the end).
-
-## 4. Critical Reflection
-
-What Worked: The visualization successfully meets the brief, particularly in its abstract, cyclical nature. The use of lerpColor() is the most effective element, as it makes the passage of time immediately visible through color change, which requires no interpretation of numbers. The fast central pulse provides a great anchor for the ephemeral "Now".
-
-Artistic Decision: The color palette (deep, cool colors for hours; bright, hot colors for seconds) was chosen to visually reinforce the difference in scale and speed, giving the hours a sense of gravity and the seconds a sense of energy.
-
-What Didn't Work / Next Steps: The visualization is currently too continuous. Time, in reality, has discrete "events" (like midnight, or a new hour) that feel like a rupture. The current math creates a perfectly smooth transition from $11:59:59$ to $12:00:00$, which lacks drama.
-
-Questions for Next Week: How can I use the modulus operator (%) or conditional logic (if statements) to trigger a visual shockwave or noise burst across the rings only when a full cycle completes? This would make the discrete nature of time more apparent. Also, how can I introduce an even slower cycle (daily or weekly) into the background color to visualize a layer of "geological" or "historical" time?
+```javascript
+  // Example for the Seconds Ring
+  push();
+  // ACTIVATING THE GLOW
+  drawingContext.shadowBlur = 20; 
+  drawingContext.shadowColor = color(200, 100, 100); // Blue Glow
+  stroke(200, 100, 100);
+  
+  // Map seconds (0-60) to angle (0-360)
+  let scAngle = map(s, 0, 60, 0, 360);
+  
+  // Draw the arc
+  arc(0, 0, 300, 300, 0, scAngle);
+  pop();
+  ```
+  ![Concept Sketch](./image/output_03.png)
+  ## Critical Reflection
+  * **Abstraction of Time:** By removing the numbers, the clock becomes less about "being on time" and more about "feeling" the current moment. The smooth motion of the seconds ring creates a hypnotic rhythm that a ticking second hand lacks.
+  * **Cyclical Nature:** The design reinforces the lesson's concept of cyclical time. The arcs grow and then visually "reset" (complete the circle) every minute or hour, emphasizing the loop of time.
+  * **Challenges:**  My initial attempt was just a pulsing circle, but it was too abstract—I couldn't tell what time it was. I iterated by adding separate rings for h/m/s, which struck a better balance between "artistic abstraction" and "functional readability."
+  * **Future Ideas:** I would like to map the color of the glow to the actual time of day (e.g., warm oranges for noon, cool blues for midnight) to create a "biological clock" feel.
