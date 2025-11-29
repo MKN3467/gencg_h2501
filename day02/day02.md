@@ -3,7 +3,7 @@
 ## Exploration & Experimentation
 I started by sketching a repeating diamond pattern on paper to understand the geometry.
 
-![Hand drawn diamond sketch](./content/day02/crystalSketch.jpg) C:\Users\Mert Karan Nazikoglu\Desktop\gencg_h2501\day02\crystalSketch.jpg
+![Hand drawn diamond sketch](./day02/crystalSketch.jpg) 
 
 **My Process:**
 1.  I drew diagonal lines crossing each other.
@@ -36,12 +36,12 @@ function drawSketchyDiamond(x, y, size) {
     vertex(x + half + random(-jitter, jitter), y + size + random(-jitter, jitter));
     vertex(x + random(-jitter, jitter), y + half + random(-jitter, jitter));
   endShape(CLOSE);
-  {% raw %}
-  ![Example Imaget](./day02/output_02.png) 
-  {% endraw %} 
+}
+  ```
+![Final p5.js Output](./day02/output_02.png)
+
 ## Critical Reflection
 * **From Paper to Code:** Sketching first was essential. On paper, I naturally drew imperfect lines. If I had started directly in p5.js, I probably would have used `line()` or `rect()` and ended up with a perfect, sterile grid. The sketch forced me to figure out *how* to mimic imperfection (using `random` offsets) rather than accepting the default precision of the computer.
 * **Balancing Order and Chaos:** The grid provides the "Order"—every diamond is centered exactly 50px apart. The "Chaos" comes from the `jitter` variable. I found that a jitter of 2px was the sweet spot; anything higher made the diamonds unrecognizable, and anything lower looked too perfect.
 * **Learnings:** I learned that complex textures often come from repeating very simple rules with slight variations. The pattern feels "infinite" because the logic (nested loops) can extend indefinitely, unlike my drawing which was limited by the paper edge.
 * **Next Steps:** I am curious to see what happens if I animate the jitter. Could I make the lines "vibrate" like a nervous hand? I also want to explore adding color fill to random diamonds to create a moiré effect.
-}
