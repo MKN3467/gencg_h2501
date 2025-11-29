@@ -14,8 +14,12 @@ For this week's coding assignment, I revisited my Neon Clock and extended it int
 ![Final Atomic Clock](./content/day01/005/clock.png)
 
 {% raw %}
-<iframe src="./content/day01/05/embed.html" width="600" height="600" frameborder="no"></iframe>
-{% endraw %} 
+<iframe 
+  src="./content/day01/05/embed.html" 
+  style="width: 600px !important; height: 600px !important; border: none; overflow: hidden;" 
+  scrolling="no"
+></iframe>
+{% endraw %}
 
 **New Features & Refinements:**
 1.  **Atomic Visuals:** I added "particles" (electrons) to the tips of the arcs to emphasize the motion and give it a sci-fi interface look.
