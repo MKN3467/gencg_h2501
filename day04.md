@@ -64,7 +64,7 @@ What didn't work? Why do you think it failed? I initially tried to link color to
 <iframe src="./content/day01/01/embed.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %} 
 
-![Example Image](./day04/lesson4_2.png) 
+![Example Image](./content/day01/04/lesson4_2.png) 
 
 {% raw %}
 <iframe src="./content/day01/02/embed.html" width="100%" height="450" frameborder="no"></iframe>
