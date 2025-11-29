@@ -43,6 +43,11 @@ Here is the core snippet for drawing the glowing rings:
   pop();
   ```
   ![Concept Sketch](./image/output_03.png)
+
+  {% raw %}
+<iframe src="./content/day01/90/embed.html" width="100%" height="450" frameborder="no"></iframe>
+{% endraw %} 
+
   ## Critical Reflection
   * **Abstraction of Time:** By removing the numbers, the clock becomes less about "being on time" and more about "feeling" the current moment. The smooth motion of the seconds ring creates a hypnotic rhythm that a ticking second hand lacks.
   * **Cyclical Nature:** The design reinforces the lesson's concept of cyclical time. The arcs grow and then visually "reset" (complete the circle) every minute or hour, emphasizing the loop of time.
