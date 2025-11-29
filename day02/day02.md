@@ -3,7 +3,7 @@
 ## Exploration & Experimentation
 I started by sketching a repeating diamond pattern on paper to understand the geometry.
 
-![Hand drawn diamond sketch](./images/crystalSketch.jpg)
+![Hand drawn diamond sketch](./content/day02/crystalSketch.jpg) C:\Users\Mert Karan Nazikoglu\Desktop\gencg_h2501\day02\crystalSketch.jpg
 
 **My Process:**
 1.  I drew diagonal lines crossing each other.
@@ -36,9 +36,9 @@ function drawSketchyDiamond(x, y, size) {
     vertex(x + half + random(-jitter, jitter), y + size + random(-jitter, jitter));
     vertex(x + random(-jitter, jitter), y + half + random(-jitter, jitter));
   endShape(CLOSE);
-
-  ![Final p5.js Output](./images/output_02.png)
-
+  {% raw %}
+  ![Example Imaget](./day02/output_02.png) 
+  {% endraw %} 
 ## Critical Reflection
 * **From Paper to Code:** Sketching first was essential. On paper, I naturally drew imperfect lines. If I had started directly in p5.js, I probably would have used `line()` or `rect()` and ended up with a perfect, sterile grid. The sketch forced me to figure out *how* to mimic imperfection (using `random` offsets) rather than accepting the default precision of the computer.
 * **Balancing Order and Chaos:** The grid provides the "Order"—every diamond is centered exactly 50px apart. The "Chaos" comes from the `jitter` variable. I found that a jitter of 2px was the sweet spot; anything higher made the diamonds unrecognizable, and anything lower looked too perfect.
