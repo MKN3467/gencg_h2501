@@ -14,7 +14,7 @@ For this week's coding assignment, I revisited my Neon Clock and extended it int
 ![Final Atomic Clock](./content/day01/005/clock.png)
 
 {% raw %}
-<iframe src="./content/day01/05/embed.html" width="1200" height="1200" frameborder="no"></iframe>
+<iframe src="./content/day01/05/embed.html" width="600" height="600" frameborder="no"></iframe>
 {% endraw %} 
 
 **New Features & Refinements:**
