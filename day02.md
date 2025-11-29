@@ -3,7 +3,7 @@
 ## Exploration & Experimentation
 I started by sketching a repeating diamond pattern on paper to understand the geometry.
 
-![Hand drawn diamond sketch](./day02/crystalSketch.jpg) 
+![Example Image](./content/day01/002/crystalSketch.jpg)
 
 **My Process:**
 1.  I drew diagonal lines crossing each other.
@@ -38,7 +38,7 @@ function drawSketchyDiamond(x, y, size) {
   endShape(CLOSE);
 }
   ```
-![Final p5.js Output](./day02/output_02.png)
+![Example Image](./content/day01/002/output_02.png)
 
 ## Critical Reflection
 * **From Paper to Code:** Sketching first was essential. On paper, I naturally drew imperfect lines. If I had started directly in p5.js, I probably would have used `line()` or `rect()` and ended up with a perfect, sterile grid. The sketch forced me to figure out *how* to mimic imperfection (using `random` offsets) rather than accepting the default precision of the computer.
