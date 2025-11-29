@@ -58,13 +58,13 @@ What worked? What surprised you? The core system of energy accumulation and deca
 
 What didn't work? Why do you think it failed? I initially tried to link color to the energy level, but the result was too messy. It failed because it gave the machine an emotional quality (hotter = more intense color), which conflicted with its established "stubborn and systematic" character. By fixing the color based purely on column position, the result became colder, more systematic, and truer to the machine's persona.
 
-![Example Image](./content/day01/04/lesson4_1.png/)
+![Example Image](./content/day01/04/lesson4_1.png)
 
 {% raw %}
 <iframe src="./content/day01/01/embed.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %} 
 
-![Example Image](./content/day01/04/lesson4_2.png/) 
+![Example Image](./content/day01/04/lesson4_2.png) 
 
 {% raw %}
 <iframe src="./content/day01/02/embed.html" width="100%" height="450" frameborder="no"></iframe>
