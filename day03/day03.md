@@ -6,7 +6,7 @@ The brief was to build an "Abstract Clock" that visualizes the passing of time w
 
 My goal was to create a "Neon Ring System" where the passage of time is felt through light and motion rather than read through digits.
 
-![Concept Sketch](./images/sketch_week03.jpg) 
+![Concept Sketch](./content/day01/003/sketch_03.png) 
 *(Note: If you haven't drawn one yet, draw 3 concentric circles on paper and upload it here later)*
 
 ## References
@@ -42,9 +42,9 @@ Here is the core snippet for drawing the glowing rings:
   arc(0, 0, 300, 300, 0, scAngle);
   pop();
   ```
-  ![Concept Sketch](./image/output_03.png)
+  ![Concept Sketch](./content/day01/003/output_03.png)
 
-  {% raw %}
+{% raw %}
 <iframe src="./content/day01/90/embed.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %} 
 
