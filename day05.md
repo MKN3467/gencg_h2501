@@ -16,7 +16,7 @@ For this week's coding assignment, I revisited my Neon Clock and extended it int
 {% raw %}
 <iframe 
   src="./content/day01/05/embed.html" 
-  style="width: 600px !important; height: 600px !important; border: none; overflow: hidden;" 
+  style="width: 1200px !important; height: 1200px !important; border: none; overflow: hidden;" 
   scrolling="no"
 ></iframe>
 {% endraw %}
