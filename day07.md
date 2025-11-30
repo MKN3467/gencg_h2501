@@ -9,9 +9,8 @@ I chose to explore **Pixel Sorting**, a glitch art technique where pixels are re
 **The Process:**
 I started with a high-contrast portrait because the clear distinction between light and dark areas creates more dramatic sorting effects.
 
-| Original Source | Transformed Output |
-| :---: | :---: |
-| ![Original Portrait](./content/day01/007/portrait.jpg) | ![Pixel Sorted Portrait](./content/day01/007/Portrait_output.png) |
+![Original Portrait](./content/day01/007/portrait.jpg)  
+![Pixel Sorted Portrait](./content/day01/007/Portrait_output.png)
 
 ## Algorithmic Thinking
 Instead of telling the computer "draw a line," I told it to:
