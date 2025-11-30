@@ -11,11 +11,7 @@ I started with a high-contrast portrait because the clear distinction between li
 
 | Original Source | Transformed Output |
 | :---: | :---: |
-| ![Original Portrait](./content/day01/007/portrait.jpg) 
-
-{% raw %}
-<iframe src="./content/day01/07/embed.html" width="751" height="1002" frameborder="no"></iframe>
-{% endraw %} 
+| ![Original Portrait](./content/day01/007/portrait.jpg) | ![Pixel Sorted Portrait](./content/day01/007/Portrait_output.png) |
 
 ## Algorithmic Thinking
 Instead of telling the computer "draw a line," I told it to:
