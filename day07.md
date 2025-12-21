@@ -11,7 +11,7 @@ I started with a high-contrast portrait because the clear distinction between li
 
 ![Original Portrait](./content/day01/007/portrait.jpg)  
 
-![Pixel Sorted Portrait](./content/day01/007/Portrait_output.png)
+<img src="./content/day01/007/Portrait_output.png" alt="Pixel Sorted Portrait" width="400" height="600">
 
 ## Algorithmic Thinking
 Instead of telling the computer "draw a line," I told it to:

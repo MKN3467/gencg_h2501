@@ -3,7 +3,7 @@
 ## Exploration & Experimentation
 I started by sketching a repeating diamond pattern on paper to understand the geometry.
 
-![Example Image](./content/day01/002/crystalSketch.jpg)
+<img src="./content/day01/002/crystalSketch.jpg" alt="Example Image" width="600" height="600">
 
 **My Process:**
 1.  I drew diagonal lines crossing each other.
