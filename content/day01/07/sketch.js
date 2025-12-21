@@ -3,7 +3,7 @@ let img;
 function preload() {
   // Load the image you just uploaded
   // Make sure the path matches your folder structure!
-  img = loadImage('../007/portrait.jpg');
+  img = loadImage('portrait.jpg');
 }
 
 function setup() {
