@@ -8,7 +8,7 @@ function preload() {
 
 function setup() {
   // Create canvas based on window size
-  createCanvas(600, 800);
+  createCanvas(400, 600);
   
   // Resize image to fit canvas for performance
   img.resize(width, height);
