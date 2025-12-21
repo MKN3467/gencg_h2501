@@ -43,10 +43,10 @@ function drawEye(x, y, w, open, isLeft) {
   }
 }
 ```
-![Example Image](./content/day01/006/output_6.png)
+<img src="./content/day01/006/output_6.png" alt="Example Image" width="600" height="600">
 
 {% raw %}
-<iframe src="./content/day01/06/embed.html" width="600" height="600" frameborder="no"></iframe>
+<iframe src="./content/day01/06/embed.html" width="400" height="600" frameborder="no"></iframe>
 {% endraw %} 
 
 ## Critical Reflection
