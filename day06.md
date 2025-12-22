@@ -2,7 +2,7 @@
 **Date:** 2025-11-29
 
 ## Exploration & Experimentation
-The brief was to create a **Parametric Face Generator**—a system that uses variables to generate unique variations of a face rather than drawing a single static portrait.
+The brief was to create a **Parametric Face Generator**,a system that uses variables to generate unique variations of a face rather than drawing a single static portrait.
 
 I wanted to recreate the specific style of a hand-drawn sketch I made of a woman. My goal was to see if I could make the computer draw something that looked "inked" and organic, while still being changeable.
 

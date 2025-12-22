@@ -1,4 +1,4 @@
-# day04
+# Week 4 Drawing Machines
 
 ## Drawing Machines
 
