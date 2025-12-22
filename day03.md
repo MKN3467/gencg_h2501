@@ -49,6 +49,7 @@ Here is the core snippet for drawing the glowing rings:
 {% endraw %} 
 
   ## Critical Reflection
+  
   * **Abstraction of Time:** By removing the numbers, the clock becomes less about "being on time" and more about "feeling" the current moment. The smooth motion of the seconds ring creates a hypnotic rhythm that a ticking second hand lacks.
   * **Cyclical Nature:** The design reinforces the lesson's concept of cyclical time. The arcs grow and then visually "reset" (complete the circle) every minute or hour, emphasizing the loop of time.
   * **Challenges:**  My initial attempt was just a pulsing circle, but it was too abstract—I couldn't tell what time it was. I iterated by adding separate rings for h/m/s, which struck a better balance between "artistic abstraction" and "functional readability."
