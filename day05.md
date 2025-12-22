@@ -1,7 +1,3 @@
----
-nav_order: 5
----
-
 # Week 05: Consolidation & Final Project Plan
 **Date:** 2025-11-29
 

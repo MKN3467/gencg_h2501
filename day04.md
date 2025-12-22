@@ -1,7 +1,3 @@
----
-nav_order: 4
----
-
 # Week 4 Drawing Machines
 
 ## Drawing Machines

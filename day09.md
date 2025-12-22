@@ -1,7 +1,3 @@
----
-nav_order: 9
----
-
 # Week 09: Advanced Composition & Final Prototype
 **Date:** 2025-12-04
 
