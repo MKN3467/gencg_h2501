@@ -2,7 +2,9 @@
 nav_order: 4
 ---
 
-# Week 04: Drawing Machines
+# Week 4 Drawing Machines
+
+## Drawing Machines
 
 ### Exploration & Experimentation
 
