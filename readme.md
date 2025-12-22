@@ -2,7 +2,7 @@
 nav_order: 1
 ---
 
-# Day 01
+# Week 1: Introduction & Foundations
 
 ## Exploration & Experimentation
 
