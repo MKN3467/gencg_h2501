@@ -2,14 +2,14 @@
 **Date:** 2025-11-29
 
 ## Exploration & Experimentation
-The brief was to build an "Abstract Clock" that visualizes the passing of time without using numbers or text. I explored the concept of **Cyclical Time**—the idea that time repeats in loops (minutes, hours, days)—rather than a linear timeline.
+The brief was to build an "Abstract Clock" that visualizes the passing of time without using numbers or text. I explored the concept of **Cyclical Time**.the idea that time repeats in loops (minutes, hours, days) rather than a linear timeline.
 
 My goal was to create a "Neon Ring System" where the passage of time is felt through light and motion rather than read through digits.
 
  ![Example Image](./content/day01/003/sketch_week03.jpg)
 
 ## References
-* **Lesson Theme:** "Linear vs. Cyclical Time" - I chose to focus purely on cyclical representation using circles.
+* **Lesson Theme:** "Linear vs. Cyclical Time", I chose to focus purely on cyclical representation using circles.
 * **Technique:** `drawingContext.shadowBlur` in p5.js to create a neon glow effect.
 
 ## Algorithmic Thinking
