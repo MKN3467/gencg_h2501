@@ -1,3 +1,7 @@
+---
+nav_order: 10
+---
+
 # Week 10: Integration & Experimentation
 **Date:** 2025-12-04
 
