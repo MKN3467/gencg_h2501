@@ -1,6 +1,8 @@
 ---
+layout: default
 title: Week 1 - Introduction & Foundations
 nav_order: 1
+permalink: /
 ---
 
 # Week 1: Introduction & Foundations

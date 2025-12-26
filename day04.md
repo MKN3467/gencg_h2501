@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Week 4 - Drawing Machines
 nav_order: 4
 ---
