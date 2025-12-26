@@ -1,3 +1,8 @@
+---
+title: Week 4 - Drawing Machines
+nav_order: 4
+---
+
 # Week 4 Drawing Machines
 
 ## Drawing Machines

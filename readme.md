@@ -1,3 +1,8 @@
+---
+title: Week 1 - Introduction & Foundations
+nav_order: 1
+---
+
 # Week 1: Introduction & Foundations
 
 ## Exploration & Experimentation
