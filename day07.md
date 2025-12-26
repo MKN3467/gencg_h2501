@@ -1,3 +1,9 @@
+---
+layout: default
+title: Week 07 - Pixels as Material
+nav_order: 7
+---
+
 # Week 07: Pixels as Material
 **Date:** 2025-11-30
 

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Week 11 - Final Project Workshop
+nav_order: 11
+---
+
 # Week 11 Journal: Final Project Workshop
 
 ## Focus: Refine and polish final project with support.

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Week 03 - Time & Oscillations
+nav_order: 3
+---
+
 # Week 03: Time & Oscillations
 **Date:** 2025-11-29
 

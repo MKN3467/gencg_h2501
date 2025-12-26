@@ -1,3 +1,9 @@
+---
+layout: default
+title: Week 02 - Grids and Patterns
+nav_order: 2
+---
+
 # Week 02: Grids and Patterns
 
 ## Exploration & Experimentation

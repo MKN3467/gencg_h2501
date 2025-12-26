@@ -1,3 +1,9 @@
+---
+layout: default
+title: Week 06 - Parametric Faces
+nav_order: 6
+---
+
 # Week 06: Parametric Faces
 **Date:** 2025-11-29
 
