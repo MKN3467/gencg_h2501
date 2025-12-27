@@ -4,7 +4,7 @@ title: Week 13 - Final Project Detailed Documentation
 nav_order: 13
 ---
 
-# Deep Space Run - Technical Documentation
+# Deep Space Run - Final Peoject Detailed Documentation
 
 > A retro-futuristic 3D space racing visualization built with p5.js and WebGL
 
