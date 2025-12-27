@@ -517,6 +517,10 @@ class Star {
 | Terrain Grid | 1.5 |
 | Star Streaks | 2.0 |
 
+{% raw %}
+<iframe src="./content/day01/13/embed.html" width="800" height="600" frameborder="no"></iframe>
+{% endraw %} 
+
 ---
 
 ## Future Enhancement Ideas
@@ -529,6 +533,3 @@ class Star {
 - [ ] Implement difficulty progression (speed increase)
 
 ---
-
-*Documentation generated for Deep Space Run v1.0*
-*Last updated: December 2024*
