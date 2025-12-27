@@ -48,8 +48,6 @@ Here is the core snippet for drawing the glowing rings:
   pop();
   ```
 
-  ![Example Image](./content/day01/003/output_03.png)
-
 {% raw %}
 <iframe src="./content/day01/90/embed.html" width="600" height="600" frameborder="no"></iframe>
 {% endraw %} 
