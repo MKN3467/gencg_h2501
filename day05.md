@@ -17,8 +17,6 @@ Specifically, I enjoyed the **Neon Clock** experiment.
 ## The Extended Sketch: Atomic Interactive Clock
 For this week's coding assignment, I revisited my Neon Clock and extended it into an **Interactive Atomic Clock**.
 
-<img src="./content/day01/005/clock.png" alt="Final Atomic Clock" width="600" height="600">
-
 {% raw %}
 <iframe 
   src="./content/day01/05/embed.html" 
