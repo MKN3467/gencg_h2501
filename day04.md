@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Week 4 - Drawing Machines
+title: Week 04 - Drawing Machines
 nav_order: 4
 ---
 
-# Week 4 Drawing Machines
+# Week 04 Drawing Machines
 
 ## Drawing Machines
 
