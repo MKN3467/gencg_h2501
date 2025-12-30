@@ -12,7 +12,7 @@ The brief was to build an "Abstract Clock" that visualizes the passing of time w
 
 My goal was to create a "Neon Ring System" where the passage of time is felt through light and motion rather than read through digits.
 
- ![Example Image](./content/day01/003/sketch_week03.jpg)
+<img src="./content/day01/003/sketch_week03.jpg" alt="Example Image" width="600" height="600">
 
 ## References
 * **Lesson Theme:** "Linear vs. Cyclical Time", I chose to focus purely on cyclical representation using circles.
