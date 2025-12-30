@@ -9,7 +9,7 @@ nav_order: 2
 ## Exploration & Experimentation
 I started by sketching a repeating diamond pattern on paper to understand the geometry.
 
-<img src="./content/day01/002/crystalSketch.jpg" alt="Example Image" width="600" height="600">
+<img src="./content/day01/002/crystalSketch.jpg" alt="Example Image" width="300" height="300">
 
 **My Process:**
 1.  I drew diagonal lines crossing each other.
