@@ -72,12 +72,6 @@ What worked? The analog exercises were surprisingly effective at highlighting th
 
 What didn't work? My initial hand-sketches for the Sprouts game were very difficult to track, and I broke the "no lines crossing" rule several times. This highlights the lecture's point: "But human beings are very bad automatons. They are slow and horribly subjective". It confirms the necessity of using the computer for perfect execution of complex, rule-based systems.   
 
-
-Next steps:    
-
-Code the Wall Drawing 118 exercise in p5.js to translate the analog chaos into a digital output.
-
-Begin exploring Iteration + Randomness by coding the grid system discussed in the lectures.
-
-Develop a limited color palette to apply to the grid, as the simple black-and-white feels too basic.
-
+{% raw %}
+<iframe src="./content/day01/first/embed.html" width="600" height="600" frameborder="no"></iframe>
+{% endraw %} 
