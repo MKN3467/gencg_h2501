@@ -5,7 +5,6 @@ nav_order: 9
 ---
 
 # Week 09: Advanced Composition & Final Prototype
-**Date:** 2025-12-04
 
 ## Exploration: The Infinite Road
 For this week's focus on **Advanced Composition and Spatial Design**, I began prototyping the environment for my final project (The Neon Tron Bike).

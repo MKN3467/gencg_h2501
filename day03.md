@@ -5,7 +5,6 @@ nav_order: 3
 ---
 
 # Week 03: Time & Oscillations
-**Date:** 2025-11-29
 
 ## Exploration & Experimentation
 The brief was to build an "Abstract Clock" that visualizes the passing of time without using numbers or text. I explored the concept of **Cyclical Time**.the idea that time repeats in loops (minutes, hours, days) rather than a linear timeline.

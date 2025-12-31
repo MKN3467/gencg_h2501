@@ -5,7 +5,6 @@ nav_order: 10
 ---
 
 # Week 10: Integration & Experimentation
-**Date:** 2025-12-04
 
 ## Integration: The Digital Object
 This week's goal was to integrate multiple techniques into a cohesive whole. For my final project prototype, I focused on integrating **3D Modeling** with **Generative Materials**.

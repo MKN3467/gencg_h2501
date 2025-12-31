@@ -5,7 +5,6 @@ nav_order: 5
 ---
 
 # Week 05: Consolidation & Final Project Plan
-**Date:** 2025-11-29
 
 ## Retrospective: What Resonated?
 We are at the midpoint of the semester. Looking back at the first few modules (Grids, Time, Agents), the module that resonated most with me was **Week 03: Time & Oscillations**.

@@ -5,7 +5,6 @@ nav_order: 7
 ---
 
 # Week 07: Pixels as Material
-**Date:** 2025-11-30
 
 ## Exploration & Experimentation
 This week shifted the focus from drawing shapes (circles, rects) to manipulating raw data. The goal was to treat the pixels of an image not as a fixed picture, but as a collection of sortable data points.

@@ -5,7 +5,6 @@ nav_order: 6
 ---
 
 # Week 06: Parametric Faces
-**Date:** 2025-11-29
 
 ## Exploration & Experimentation
 The brief was to create a **Parametric Face Generator**,a system that uses variables to generate unique variations of a face rather than drawing a single static portrait.
